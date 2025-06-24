@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Optional for smooth scrolling */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333; /* Change background color to match footer */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: flex-start; /* Align all content to the left */
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    margin-right: auto; /* Push the logo to the left */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+    color: #0056b3;
+}
+
+.nav-logo-img {
+    height: 50px; /* Adjust the height of the image */
+    margin-right: 0.5rem; /* Add spacing between the image and text */
+    transition: transform 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 0; /* Remove any margin to align menu to the left */
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff; /* Change text color to white for better contrast */
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #333; /* Ensure scrolled navbar matches footer color */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+section {
+    min-height: calc(100vh - 4rem); /* Adjust height to account for navbar */
+    padding: 6rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Default background for sections */
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem); /* Adjust height to account for navbar */
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem); /* Adjust height to account for navbar */
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem); /* Adjust height to account for navbar */
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services-content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+#contact {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: calc(100vh - 4rem); /* Adjust height to account for navbar */
+    background-color: #f2f6f8; /* Light blue background for better visibility */
+    padding: 2rem; /* Add padding for spacing */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Add subtle shadow for clarity */
+}
+
+.contact-content {
+    text-align: center; /* Align text to the center */
+    max-width: 600px; /* Limit width for better readability */
+}
+
+.contact-content h1 {
+    font-size: 2.5rem;
+    color: #0d1217; /* Use a contrasting color for the heading */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    color: #0b0909; /* Use a darker color for better readability */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #0056b3;
+}
